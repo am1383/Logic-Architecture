@@ -32,7 +32,7 @@ architecture Behavioral of MUX2_tb is
     signal Y_tb  : std_logic;
     signal D2_tb : std_logic := '0';
     signal D3_tb : std_logic := '0';
-    signal S_tb : std_logic := '0';
+    signal S_tb  : std_logic := '0';
     signal Y1_tb : std_logic;
 
 begin
@@ -59,10 +59,9 @@ begin
         -- Test case 1
         D0_tb <= '1';
         D1_tb <= '0';
-        S_tb <= '0';
+        S_tb  <= '0';
         D2_tb <= '0';
         D3_tb <= '1';
-        --S1_tb <= '1';
         wait for 10 ns;
 
         -- End simulation
@@ -70,3 +69,4 @@ begin
     end process;
 
 end Behavioral;
+

@@ -17,3 +17,4 @@ begin
         Y <= (D0 and (not S0)) or (D1 and S0);
     end process;
 end Behavioral;
+
