@@ -3,18 +3,20 @@ use IEEE.std_logic_1164.all;
 
 entity MUX is
     Port ( 
-        D0 :   in  std_logic;
-        D1 :   in  std_logic;
-        S0 :   in  std_logic;
-        Y  :   out std_logic
-        );
+        D0 : in std_logic;
+        D1 : in std_logic;
+        S0 : in std_logic;
+        Y  : out std_logic
+    );
 end MUX;
 
 architecture Behavioral of MUX is
+    signal Select0, D0_Input, D1_Input : std_logic;
 begin
-    process(D0, D1, S0)
-    begin
-        Y <= (D0 and (not S0)) or (D1 and S0);
-    end process;
-end Behavioral;
 
+    Select0 <= not S0;
+    D0_Input <= D0 and Select0;
+    D1_Input <= D1 and S0;
+    Y <= D0_Input or D1_Input;
+
+end Behavioral;
