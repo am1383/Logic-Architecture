@@ -16,6 +16,8 @@ The `MUX2` entity is designed to select one of three input signals (`D0`, `D1`, 
 <h2>NOR Gate</h2>
 
 This Complex Circuit Show NOR Gate
+
+
 ![1718131791457](image/README/1718131791457.png)
 
 ### Entity Declaration
