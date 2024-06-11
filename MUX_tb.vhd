@@ -31,9 +31,9 @@ begin
         -- Initialize Inputs
         D0 <= '1';
         D1 <= '0';
-        D2 <= '1';
+        D2 <= '0';
         S0 <= '0';
-        S1 <= '1';
+        S1 <= '0';
         wait for 10 ns;
 
     end process;

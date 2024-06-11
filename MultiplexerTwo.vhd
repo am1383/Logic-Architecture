@@ -32,8 +32,8 @@ begin
 
     -- Second level of MUX
     MUX2 : MUX port map (
-        D0 => D2,
-        D1 => MUX1_Result,
+        D0 => MUX1_Result,
+        D1 => D2,
         S0 => S1,
         Y  => MUX2_Result
     );
@@ -42,3 +42,4 @@ begin
     Y1 <= MUX2_Result;
 
 end Behavioral;
+
